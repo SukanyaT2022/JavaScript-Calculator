@@ -19,36 +19,40 @@
             border-radius: 30px;
             padding: 30px;
             background-image: url("https://images.unsplash.com/photo-1621799754526-a0d52c49fad5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHJhaW5ib3d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60");
-         background-size: 100%;
-        }
-/*input type=number only target long input box*/
-        input[type=number]{
-            margin-bottom: 10px;
-           
+            background-size: 100%;
         }
 
-       /*input type=number only target circel box-radiobox*/ 
-        input[type=radio]{
-margin-top: 0px;
+        /*input type=number only target long input box*/
+        input[type=number] {
+            margin-bottom: 10px;
+
         }
-        h1{
+
+        /*input type=number only target circel box-radiobox*/
+        input[type=radio] {
+            margin-top: 0px;
+        }
+
+        h1 {
             text-align: center;
             margin-top: 50px;
         }
-        .middleBox{
+
+        .middleBox {
             margin: 20px 0px;
         }
-        button{
+
+        button {
             margin-top: 20px;
-         border: 2px solid pink;
+            border: 2px solid pink;
 
         }
+
         /*focus effect when click--differ than hover effect when touch */
-      button:focus{
-        background-color: pink;
-       
-      }
-      
+        button:focus {
+            background-color: pink;
+
+        }
     </style>
 </head>
 
@@ -56,18 +60,18 @@ margin-top: 0px;
     <div class="container">
         <h1>Calculator</h1>
         <label for="text">Enter First Number</label><input type="number" id="Num1">
-        <label for="text">Enter second Number</label><input type="number" id="Num2">
+        <label for="text">Enter Second Number</label><input type="number" id="Num2">
         <label for="text">Answer</label><input type="number" id="answer">
-<div class="middleBox">
-        <input type="radio" id="add" name="rdop" value="add">Add
-         <!--name="rdop" use to make user user pick only one radio button such as only add or only  subtract-- pick only one-->
-        <input type="radio" id="subtract" name="rdop" value="substract">Substract
-        <input type="radio" id="multiply" name="rdop" value="multiply">Multiply
-        <input type="radio" id="divide" name="rdop" value="divide">Divide
-       
-    </div>
+        <div class="middleBox">
+            <input type="radio" id="add" name="rdop" value="add">Add
+            <!--name="rdop" use to make user user pick only one radio button such as only add or only  subtract-- pick only one-->
+            <input type="radio" id="subtract" name="rdop" value="substract">Substract
+            <input type="radio" id="multiply" name="rdop" value="multiply">Multiply
+            <input type="radio" id="divide" name="rdop" value="divide">Divide
 
-    <button onclick="calculator()">Calculate</button>
+        </div>
+
+        <button onclick="calculator()">Calculate</button>
 
     </div>
     <script>
